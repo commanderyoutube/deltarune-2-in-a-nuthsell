@@ -72,7 +72,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . f f f . . . . 
         `],
     50,
-    true
+    false
     )
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -149,7 +149,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
         3 3 . . . . . . . f f f . . . . 
         `],
     50,
-    true
+    false
     )
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -258,7 +258,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ........................
         `],
     50,
-    true
+    false
     )
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -335,7 +335,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . f f f . . . f f . . . . . 
         `],
     50,
-    true
+    false
     )
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -412,7 +412,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . f f . . . f f f . . . . 
         `],
     50,
-    true
+    false
     )
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -489,7 +489,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
         3 3 . . . . . . . f f f . . . . 
         `],
     50,
-    true
+    false
     )
 })
 let mySprite2: Sprite = null
@@ -753,3 +753,21 @@ let mySprite3 = sprites.create(img`
     `, SpriteKind.Food)
 mySprite2.setPosition(0, 0)
 mySprite.sayText("THE KROMER")
+let mySprite4 = sprites.create(img`
+    . . f . f f f f . f . . . . . . . . 
+    . f 1 f 1 1 1 1 f 1 f . . . . . . . 
+    . f 1 1 1 1 1 1 1 1 f . . . . . f . 
+    . f 1 1 1 1 1 1 1 1 1 f . . . f 1 f 
+    f 1 1 f 1 1 f 1 1 1 1 f f . . f 1 f 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 f f 1 1 f 
+    f 1 1 1 f f 1 1 1 1 1 1 1 1 1 1 1 f 
+    f 1 f 1 f 1 1 f 1 1 1 1 1 1 1 1 1 f 
+    f 1 1 f f f f 1 1 1 1 1 1 1 1 1 1 f 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+    f 1 1 1 f f 1 1 f f 1 1 f f 1 1 f . 
+    . f 1 1 f f 1 1 f f 1 1 f f 1 1 f . 
+    . f 1 f . f 1 f . f 1 f . f 1 f . . 
+    . . f . . . f . . . f . . . f . . . 
+    `, SpriteKind.Enemy)
