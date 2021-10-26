@@ -1,7 +1,220 @@
+controller.up.onEvent(ControllerButtonEvent.Repeated, function () {
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
+    animation.runImageAnimation(
+    mySprite2,
+    [img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 7 7 f f f . . . . 
+        . . . f f f 7 7 7 7 f f f . . . 
+        . . f f f 7 7 7 7 7 7 f f f . . 
+        . . f f 7 7 7 7 7 7 7 7 f f . . 
+        . . f 7 7 f f f f f f 7 7 f . . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . f f f 7 b f 7 7 f b 7 f f f . 
+        . f f f 7 1 f 7 7 f 1 7 f f f . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f 3 3 3 3 7 7 f . . . . 
+        . . . f 3 3 3 3 7 7 7 7 f . . . 
+        . . f 3 3 3 7 7 7 7 7 7 7 f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f . . . . f f . . . . 
+        . . f f f f . . . . f f f . . . 
+        `,img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 7 7 f f f . . . . 
+        . . . f f f 7 7 7 7 f f f . . . 
+        . . f f f 7 7 7 7 7 7 f f f . . 
+        . . f f 7 7 7 7 7 7 7 7 f f . . 
+        . . f 7 7 f f f f f f 7 7 f . . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . f f f 7 b f 7 7 f b 7 f f f . 
+        . f f f 7 1 f 7 7 f 1 7 f f f . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f 3 3 3 3 7 7 f . . . . 
+        . . . f 3 3 3 3 7 7 7 7 f . . . 
+        . . f 3 3 3 7 7 7 7 7 7 7 f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f . . . . f f . . . . 
+        . . . f f f . . . . f f f f . . 
+        `],
+    50,
+    false
+    )
+})
+controller.right.onEvent(ControllerButtonEvent.Repeated, function () {
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
+    animation.runImageAnimation(
+    mySprite2,
+    [img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 7 7 f f f . . . . 
+        . . . f f f 7 7 7 7 f f f . . . 
+        . . f f f 7 7 7 7 7 7 f f f . . 
+        . . f f 7 7 7 7 7 7 7 7 f f . . 
+        . . f 7 7 f f f f f f 7 7 f . . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . f f f 7 b f 7 7 f b 7 f f f . 
+        . f f f 7 1 f 7 7 f 1 7 f f f . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f 3 3 3 3 7 7 f . . . . 
+        . . . f 3 3 3 3 7 7 7 7 f . . . 
+        . . f 3 3 3 7 7 7 7 7 7 7 f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f . . . . f f . . . . 
+        . . f f f f . . . . f f f . . . 
+        `,img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 7 7 f f f . . . . 
+        . . . f f f 7 7 7 7 f f f . . . 
+        . . f f f 7 7 7 7 7 7 f f f . . 
+        . . f f 7 7 7 7 7 7 7 7 f f . . 
+        . . f 7 7 f f f f f f 7 7 f . . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . f f f 7 b f 7 7 f b 7 f f f . 
+        . f f f 7 1 f 7 7 f 1 7 f f f . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f 3 3 3 3 7 7 f . . . . 
+        . . . f 3 3 3 3 7 7 7 7 f . . . 
+        . . f 3 3 3 7 7 7 7 7 7 7 f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f . . . . f f . . . . 
+        . . . f f f . . . . f f f f . . 
+        `],
+    50,
+    false
+    )
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
+    animation.runImageAnimation(
+    mySprite2,
+    [img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 7 7 f f f . . . . 
+        . . . f f f 7 7 7 7 f f f . . . 
+        . . f f f 7 7 7 7 7 7 f f f . . 
+        . . f f 7 7 7 7 7 7 7 7 f f . . 
+        . . f 7 7 f f f f f f 7 7 f . . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . f f f 7 b f 7 7 f b 7 f f f . 
+        . f f f 7 1 f 7 7 f 1 7 f f f . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f 3 3 3 3 7 7 f . . . . 
+        . . . f 3 3 3 3 7 7 7 7 f . . . 
+        . . f 3 3 3 7 7 7 7 7 7 7 f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f . . . . f f . . . . 
+        . . f f f f . . . . f f f . . . 
+        `,img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 7 7 f f f . . . . 
+        . . . f f f 7 7 7 7 f f f . . . 
+        . . f f f 7 7 7 7 7 7 f f f . . 
+        . . f f 7 7 7 7 7 7 7 7 f f . . 
+        . . f 7 7 f f f f f f 7 7 f . . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . f f f 7 b f 7 7 f b 7 f f f . 
+        . f f f 7 1 f 7 7 f 1 7 f f f . 
+        . . f f f 7 7 f f 7 7 f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f 3 3 3 3 7 7 f . . . . 
+        . . . f 3 3 3 3 7 7 7 7 f . . . 
+        . . f 3 3 3 7 7 7 7 7 7 7 f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f . . . . f f . . . . 
+        . . . f f f . . . . f f f f . . 
+        `],
+    50,
+    false
+    )
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    mySprite.setPosition(10, 15)
+    mySprite2.setPosition(10, 15)
     mySprite.sayText("THE KROMER")
 })
+controller.left.onEvent(ControllerButtonEvent.Repeated, function () {
+    animation.stopAnimation(animation.AnimationTypes.All, mySprite)
+    animation.runImageAnimation(
+    mySprite2,
+    [img`
+        . . . . f f f f f f . . . . . . 
+        . . . f 7 7 7 7 7 7 f f . . . . 
+        . . f 7 7 7 7 7 7 7 7 f f . . . 
+        . . f 7 7 7 7 7 7 7 7 7 f . . . 
+        . f 7 7 7 7 7 7 7 7 7 7 7 f . . 
+        f 7 7 7 f f f f 7 7 7 7 7 7 f . 
+        . f f f f f 7 7 f f f f f f . . 
+        . f f f f 7 f 1 7 f f f f f . . 
+        . . f f f 7 f 1 7 f f f f f . . 
+        . . . f f f 7 7 f f f f f . . . 
+        . . . f 7 f f f f f f f . . . . 
+        . . . f 7 3 3 3 3 f . . . . . . 
+        . . . f 7 7 7 3 3 3 f . . . . . 
+        . . . f 7 7 7 7 7 3 3 f . . . . 
+        . . . . f f f f f f f . . . . . 
+        . . . . . . f f f . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . f 7 7 7 7 7 f . . . . . 
+        . . . f 7 7 7 7 7 7 7 f . . . . 
+        . . f 7 7 7 7 7 7 7 7 7 f . . . 
+        . f 7 7 7 7 7 7 7 7 7 7 7 f f . 
+        f 7 7 7 f f f f 7 7 7 7 7 7 7 f 
+        . f f f f f 7 7 f f f f f f f . 
+        . f f f f 7 f 1 7 f f f f f . . 
+        . . f f f 7 f 1 7 f f f f . . . 
+        . . . f f f 7 7 3 3 3 f f . . . 
+        . . . f 7 7 7 7 7 7 3 3 3 f . . 
+        . . . f 7 7 7 7 7 7 7 3 3 3 f . 
+        . . f f 7 7 f 7 7 f f f f f . . 
+        . . f f f f f f f f f f . . . . 
+        . . . f f f . . . f f . . . . . 
+        `,img`
+        . . . . f f f f f f . . . . . . 
+        . . . f 7 7 7 7 7 7 f f . . . . 
+        . . f 7 7 7 7 7 7 7 7 f f . . . 
+        . . f 7 7 7 7 7 7 7 7 7 f . . . 
+        . f 7 7 7 7 7 7 7 7 7 7 7 f . . 
+        f 7 7 7 f f f f 7 7 7 7 7 7 f . 
+        . f f f f f 7 7 f f f f f f . . 
+        . f f f f 7 f 1 7 f f f f f . . 
+        . . f f f 7 f 1 7 f f f f f . . 
+        . . . f f f 7 7 f f f f f . . . 
+        . . . f 7 f f f b b f f . . . . 
+        . . . f 7 3 3 b d d b 7 f . . . 
+        . . . f 7 7 7 b d d b 7 f . . . 
+        . . . f 7 7 7 7 b b 3 f . . . . 
+        . . . . f f f f f f f . . . . . 
+        . . . . . . f f f . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . . . . f f f f f f . . . . . . 
+        . . . f 7 7 7 7 7 7 f f . . . . 
+        . . f 7 7 7 7 7 7 7 7 f f . . . 
+        . . f 7 7 7 7 7 7 7 7 7 f . . . 
+        . f 7 7 7 7 7 7 7 7 7 7 7 f . . 
+        f 7 7 7 f f f f 7 7 7 7 7 7 f . 
+        . f f f f f 7 7 f f f f f f . . 
+        . f f f f 7 f b 7 f f f f f . . 
+        . . f f f 7 f 1 7 f f f f f . . 
+        . . . f f f 7 7 f b b f f . . . 
+        . . . f 7 3 3 3 b d d b f . . . 
+        . . . f 7 7 7 3 b d d b f . . . 
+        . . f f 7 7 7 7 7 b b f . . . . 
+        . . f f f f f f f f f f . . . . 
+        . . . f f f . . . f f . . . . . 
+        `],
+    1000,
+    false
+    )
+})
+let mySprite2: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundImage(img`
     bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb333bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb3bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
@@ -205,7 +418,7 @@ game.setDialogFrame(img`
     ........................................
     `)
 game.splash("You have received [Kromer]", "           ")
-scene.cameraShake(2, 9999999999999999)
+scene.cameraShake(1, 9999999999999999)
 mySprite = sprites.create(img`
     ........................................
     ........................................
@@ -249,8 +462,26 @@ mySprite = sprites.create(img`
     ...................d1f1d................
     ...................dddd.................
     `, SpriteKind.Player)
-controller.moveSprite(mySprite)
-let mySprite2 = sprites.create(img`
+mySprite2 = sprites.create(img`
+    . . . . . . f f f f . . . . . . 
+    . . . . f f f 7 7 f f f . . . . 
+    . . . f f f 7 7 7 7 f f f . . . 
+    . . f f f 7 7 7 7 7 7 f f f . . 
+    . . f f 7 7 7 7 7 7 7 7 f f . . 
+    . . f 7 7 f f f f f f 7 7 f . . 
+    . . f f f 7 7 f f 7 7 f f f . . 
+    . f f f 7 b f 7 7 f b 7 f f f . 
+    . f f f 7 1 f 7 7 f 1 7 f f f . 
+    . . f f f 7 7 f f 7 7 f f f . . 
+    . . . f f f f f f f f f f . . . 
+    . . f 3 3 3 3 3 7 7 7 7 7 f . . 
+    . f 3 3 3 3 7 7 7 7 7 7 7 7 f . 
+    f 3 3 3 7 7 7 7 7 7 7 7 7 7 7 f 
+    . f f f f f f f f f f f f f f . 
+    . . . f f f . . . . f f f . . . 
+    `, SpriteKind.Player)
+controller.player2.moveSprite(mySprite)
+mySprite2 = sprites.create(img`
     . . . . . . . . . . . 1 . . . . 
     . 1 . . . . . . . . . 1 . . . . 
     . 1 . . . 1 . . . 1 1 1 1 1 . . 
@@ -269,20 +500,20 @@ let mySprite2 = sprites.create(img`
     . . . . . . . . . . . 1 . . . . 
     `, SpriteKind.Food)
 let mySprite3 = sprites.create(img`
-    . . f . f f f f . f . . . . . . 
-    . f 1 f 1 1 1 1 f 1 f . . . . . 
-    . f 1 1 1 1 1 1 1 1 f . . . . . 
-    . f 1 1 1 1 1 1 1 1 1 f . . . . 
-    f 1 1 f 1 1 f 1 1 1 1 f f . . f 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 f f 1 
-    f 1 1 1 f f 1 1 1 1 1 1 1 1 1 1 
-    f 1 f 1 f 1 1 f 1 1 1 1 1 1 1 1 
-    f 1 1 f f f f 1 1 1 1 1 1 1 1 1 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-    f 1 1 1 f f 1 1 f f 1 1 f f 1 1 
-    . f 1 1 f f 1 1 f f 1 1 f f 1 1 
-    . f 1 f . f 1 f . f 1 f . f 1 f 
-    . . f . . . f . . . f . . . f . 
-    `, SpriteKind.Enemy)
+    . . f . f f f f . f . . . . . . . . 
+    . f 1 f 1 1 1 1 f 1 f . . . . . . . 
+    . f 1 1 1 1 1 1 1 1 f . . . . . f . 
+    . f 1 1 1 1 1 1 1 1 1 f . . . f 1 f 
+    f 1 1 f 1 1 f 1 1 1 1 f f . . f 1 f 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 f f 1 1 f 
+    f 1 1 1 f f 1 1 1 1 1 1 1 1 1 1 1 f 
+    f 1 f 1 f 1 1 f 1 1 1 1 1 1 1 1 1 f 
+    f 1 1 f f f f 1 1 1 1 1 1 1 1 1 1 f 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+    f 1 1 1 f f 1 1 f f 1 1 f f 1 1 f . 
+    . f 1 1 f f 1 1 f f 1 1 f f 1 1 f . 
+    . f 1 f . f 1 f . f 1 f . f 1 f . . 
+    . . f . . . f . . . f . . . f . . . 
+    `, SpriteKind.Food)
