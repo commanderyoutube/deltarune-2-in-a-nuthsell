@@ -334,7 +334,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . f f f f f f f f f f . . . . 
         . . . f f f . . . f f . . . . . 
         `],
-    1000,
+    50,
     true
     )
 })
@@ -353,10 +353,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . f f f f f 7 1 f 7 f f f f . . 
         . . f f f f f 7 1 f 7 f f f . . . 
         . . . f f f f f 7 7 f f f . . . . 
-        . . . . f f b b 3 3 3 3 f . . . . 
-        . . . . . b d d b 3 7 7 f . . . . 
-        . . . . . b d d b 7 7 7 f . . . . 
-        . . . . . f b b f 7 7 7 f . . . . 
+        . . . . f f 7 7 3 3 3 3 f . . . . 
+        . . . . . f 7 3 3 3 7 7 f . . . . 
+        . . . . f 3 3 3 7 7 7 7 f . . . . 
+        . . . . . f 7 7 f 7 7 7 f . . . . 
         . . . . . . f f f f f f . . . . . 
         . . . . . . . f f f . . . . . . . 
         `,img`
@@ -370,10 +370,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f f f f f f f 7 7 f f f f f f . 
         . . f f f f f 7 1 f 7 f f f f . . 
         . . f f f f f 7 1 f 7 f f f . . . 
-        . . . f f f f b b 7 3 3 f . . . . 
-        . . . . . f b d d b 3 7 f . . . . 
-        . . . . . f b d d b 7 7 f . . . . 
-        . . . . f f f b b f 7 7 f f . . . 
+        . . . f f f f f 7 7 3 3 f . . . . 
+        . . . . . f 7 7 3 3 3 3 f . . . . 
+        . . . . . f 3 3 3 3 7 7 f . . . . 
+        . . . . f f 3 3 7 f 7 7 f f . . . 
         . . . . f f f f f f f f f f . . . 
         . . . . . f f . . . f f f . . . . 
         `,img`
@@ -387,10 +387,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . f f f f f 7 1 f 7 f f f f . . 
         . . f f f f f 7 1 f 7 f f f . . . 
         . . . f f f f f 7 7 f f f . . . . 
-        . . . . f f b b 3 3 3 3 f . . . . 
-        . . . . . b d d b 3 7 7 f . . . . 
-        . . . . . b d d b 7 7 7 f . . . . 
-        . . . . . f b b f 7 7 7 f . . . . 
+        . . . . f f 7 7 3 3 3 3 f . . . . 
+        . . . . . f 7 3 3 3 7 7 f . . . . 
+        . . . . . 3 3 3 7 7 7 7 f . . . . 
+        . . . . . f 7 7 f 7 7 7 f . . . . 
         . . . . . . f f f f f f . . . . . 
         . . . . . . . f f f . . . . . . . 
         `,img`
@@ -404,10 +404,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f f f f f f f 7 7 f f f f f f . 
         . . f f f f f 7 1 f 7 f f f f . . 
         . . f f f f f 7 1 f 7 f f f . . . 
-        . . . f f b b f 7 7 3 3 f . . . . 
-        . . . . b d d b 3 3 3 7 f . . . . 
-        . . . . b d d b 7 7 7 7 f . . . . 
-        . . . . f b b f 7 7 7 7 f f . . . 
+        . . . f f f 7 f 7 7 3 3 f . . . . 
+        . . . . f 7 7 3 3 3 3 7 f . . . . 
+        . . . . f 3 3 3 3 7 7 7 f . . . . 
+        . . . . 3 3 3 f 7 7 7 7 f f . . . 
         . . . . f f f f f f f f f f . . . 
         . . . . . f f . . . f f f . . . . 
         `],
@@ -751,23 +751,5 @@ let mySprite3 = sprites.create(img`
     . 1 . . . . . . . . . 1 . . . . 
     . . . . . . . . . . . 1 . . . . 
     `, SpriteKind.Food)
-let mySprite4 = sprites.create(img`
-    . . f . f f f f . f . . . . . . . . 
-    . f 1 f 1 1 1 1 f 1 f . . . . . . . 
-    . f 1 1 1 1 1 1 1 1 f . . . . . f . 
-    . f 1 1 1 1 1 1 1 1 1 f . . . f 1 f 
-    f 1 1 f 1 1 f 1 1 1 1 f f . . f 1 f 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 f f 1 1 f 
-    f 1 1 1 f f 1 1 1 1 1 1 1 1 1 1 1 f 
-    f 1 f 1 f 1 1 f 1 1 1 1 1 1 1 1 1 f 
-    f 1 1 f f f f 1 1 1 1 1 1 1 1 1 1 f 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-    f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-    f 1 1 1 f f 1 1 f f 1 1 f f 1 1 f . 
-    . f 1 1 f f 1 1 f f 1 1 f f 1 1 f . 
-    . f 1 f . f 1 f . f 1 f . f 1 f . . 
-    . . f . . . f . . . f . . . f . . . 
-    `, SpriteKind.Enemy)
-mySprite2.setPosition(10, 15)
+mySprite2.setPosition(0, 0)
 mySprite.sayText("THE KROMER")
