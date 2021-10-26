@@ -1,6 +1,6 @@
 {
     "name": "deltarune 2 in a nuthsell",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "",
     "dependencies": {
         "device": "*"
