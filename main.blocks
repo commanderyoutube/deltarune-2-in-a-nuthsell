@@ -533,20 +533,20 @@ f f f 1 1 1 1 1 1 1 1 1 1 f f f
 ..............f7777f.....................
 .............f777777f....................
 ..........ffff777777ffff.................
-..........f77f777777f77f.................
-..........f7777777777777ffff.............
+..........f76f777777f67f.................
+..........f7767777776777ffff.............
 .......fff777777777777777777f............
 ......f7777777ffff7f7777777f.............
 .......f77777fffffff777777ff.............
 .......ff6666666ffff6666666..............
 ........f6fffff6ffff6fffff6..............
 ........6ffffffffffffffffff6.............
-........6ffffffffffffffffff6.............
-........6fffffffffffffffffff6............
-.......6ffffffffffffffffffff6............
-......6ffffffffffffffffffffff6...........
-.......6ffffffffffffffffffff6............
-......6ffffffffffffffffffffff6...........
+........6fffff77fffff77ffff6.............
+........6ffff7ff7fff7ff7ffff6............
+.......6ffff7ff1f777f1ff7fff6............
+......6fffff7ff1f7f7f1ff7ffff6...........
+.......6fffff7ff7fff7ff7ffff6............
+......6fffffff77fffff77ffffff6...........
 .......666f6fffff6ff6ffff6f66............
 ..........6.6f333333333f6.6..............
 ............633333333333f................
@@ -886,39 +886,39 @@ f 7 7 7 7 7 7 7 f f f f 7 7 7 7 f
 . . . 3 3 3 f f f f f f f f . . . 
 . . . . . f f . . . f f f . . . . 
 `]</field><data>{"commentRefs":[],"fieldData":{"frames":"s%v=kS/OoEg%5bd{;0vL"}}</data></shadow></value><value name="frameInterval"><shadow type="timePicker" id="ck)MPIea}7[/Mu7C]1JG"><field name="ms">50</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="Ben8R7n[1q*d]VKQ/qE^"><field name="on">true</field></shadow></value></block></next></block></next></block></statement></block><block type="keyonevent" id="NNv^Gy,)b6%gwhtNcqr5" x="38" y="1289"><field name="button">controller.B</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="ctrlgame_control_sprite" id="K*BSjz.H)mdYs(}#;vd3"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="controller">controller.player1</field><value name="sprite"><shadow type="variables_get" id="wA0]13J?-4Kg%M7yj(BR"><field name="VAR" id=")v%B+@~1iK.s}s;(o/+6">mySprite2</field></shadow></value><next><block type="stop_animations" id="Y)$k6YtxTYEw])ztXb[4"><field name="type">animation.AnimationTypes.All</field><value name="sprite"><shadow type="variables_get" id=",^;:[2t/Vhw(eyn)#8IN"><field name="VAR" id=")v%B+@~1iK.s}s;(o/+6">mySprite2</field></shadow></value><next><block type="run_image_animation" id="pg(v*D~Kn(B25fOBLWQY"><value name="sprite"><shadow type="variables_get" id=",Z*p^7(bV(8uoxqa2B$#"><field name="VAR" id=")v%B+@~1iK.s}s;(o/+6">mySprite2</field></shadow></value><value name="frames"><shadow type="animation_editor" id="E_xXDxKi7wNN]Wc7cIWE"><field name="frames">[img`
-. . . . . f f 7 7 f f . . . . . 
-. . . . f f 7 7 7 7 f f . . . . 
-. . . f f 7 7 7 7 7 7 f f . . . 
-. . f f 7 7 7 7 7 7 7 7 f f . . 
-. f f 7 7 7 7 7 7 7 7 7 7 f f . 
-f 7 7 7 7 f f f f f f 7 7 7 7 f 
-. f f f f 7 7 f f 7 7 f f f f . 
-. f f f 7 1 f 7 7 f 1 7 f f f . 
-. f f f 7 1 f 7 7 f 1 7 f f f . 
-. . f f f 7 7 f f 7 7 f f f . . 
-. . . f f f f f f f f f f . . . 
-. . . f 3 3 3 3 7 7 f f . . . . 
-. . . 3 3 3 7 7 7 7 7 f . . . . 
-. . 3 3 f 7 7 7 7 7 7 f . . . . 
-. . . . . f f f f f f . . . . . 
-. . . . . f f . . f f . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
 `,img`
-. . . . . f f 7 7 f f . . . . . 
-. . . . f f 7 7 7 7 f f . . . . 
-. . . f f 7 7 7 7 7 7 f f . . . 
-. . f f 7 7 7 7 7 7 7 7 f f . . 
-. f f 7 7 7 7 7 7 7 7 7 7 f f . 
-f 7 7 7 7 f f f f f f 7 7 7 7 f 
-. f f f f 7 7 f f 7 7 f f f f . 
-. . f f 7 1 f 7 7 f 1 7 f f . . 
-. . f f 7 1 f 7 7 f 1 7 f f . . 
-. . f f f 7 7 f f 7 7 f f f . . 
-. . . f f f f f f f f f f . . . 
-. . . 3 3 3 7 7 7 7 7 f . . . . 
-. 3 3 3 f 7 7 7 7 7 7 f . . . . 
-3 3 . . f 7 7 7 7 7 7 f . . . . 
-. . . . . f f f f f f . . . . . 
-. . . . . f f . . f f . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+3 . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
 `]</field><data>{"commentRefs":[],"fieldData":{"frames":"E_xXDxKi7wNN]Wc7cIWE"}}</data></shadow></value><value name="frameInterval"><shadow type="timePicker" id="pHJMnA$5mW?Q8a|q##D^"><field name="ms">50</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="C$@I1J@Y$Q?zA+V#{rpg"><field name="on">true</field></shadow></value></block></next></block></next></block></statement></block><block type="keyonevent" id="-`?$lG0WWG8/s5er%H%*" x="548" y="1299"><field name="button">controller.down</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="ctrlgame_control_sprite" id="N;MmZ6G~_QO-_;u4]^nQ"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="controller">controller.player1</field><value name="sprite"><shadow type="variables_get" id="4ti5+][b)?Llt[T--#^v"><field name="VAR" id=")v%B+@~1iK.s}s;(o/+6">mySprite2</field></shadow></value><next><block type="stop_animations" id="O{AcN$;y`6|=h|mAHAOT"><field name="type">animation.AnimationTypes.All</field><value name="sprite"><shadow type="variables_get" id="G8FB|IE/CmOwmRC?uCQ?"><field name="VAR" id=")v%B+@~1iK.s}s;(o/+6">mySprite2</field></shadow></value><next><block type="run_image_animation" id="q{veMG5u[WoG.^RBLY,8"><value name="sprite"><shadow type="variables_get" id="24BCY3Kp=*|OB1G~rs!4"><field name="VAR" id=")v%B+@~1iK.s}s;(o/+6">mySprite2</field></shadow></value><value name="frames"><shadow type="animation_editor" id="uI8r!C#55:CgD2XMK]Gq"><field name="frames">[img`
 . . . . . f f 7 7 f f . . . . . 
 . . . . f f 7 7 7 7 f f . . . . 
