@@ -1,33 +1,27 @@
 {
-    "name": "deltarune 2 in a nuthsell",
-    "version": "1.1.4",
-    "description": "",
+    "name": "deltarune-2-in-a-nuthsell",
     "dependencies": {
         "device": "*",
-        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.1",
+        "controller": "*",
         "pxt-button-combos": "github:jwunderl/pxt-button-combos#v0.0.24",
-        "controller": "*"
+        "animation": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
         "README.md",
         "assets.json",
-        "tilemap.g.jres",
-        "tilemap.g.ts",
         "images.g.jres",
         "images.g.ts",
-        null
-    ],
-    "testFiles": [
-        "test.ts"
+        "main.blocks",
+        "main.ts",
+        "test.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "tsconfig.json"
     ],
     "targetVersions": {
-        "branch": "v1.6.24",
-        "tag": "v1.6.24",
-        "commits": "https://github.com/microsoft/pxt-arcade/commits/5bea1575ea693e0648a647cbd86cda9776d58f48",
         "target": "1.6.24",
-        "pxt": "7.2.25",
         "targetId": "arcade"
     },
     "supportedTargets": [
