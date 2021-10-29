@@ -1,6 +1,6 @@
 {
     "name": "deltarune-2-in-a-nuthsell",
-    "version": "1.2.0",
+    "version": "2.0.0",
     "dependencies": {
         "device": "*",
         "controller": "*",
