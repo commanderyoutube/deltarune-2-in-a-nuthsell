@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.6.24/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"2.2.1","target":"arcade","targetVersion":"1.6.24","repo":"commanderyoutube/deltarune-2-in-a-nuthsell"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.6.24/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"2.2.2","target":"arcade","targetVersion":"1.6.24","repo":"commanderyoutube/deltarune-2-in-a-nuthsell"}
 // total=1450840 new=9.91% cached=84.46% other=5.63%
 (function (ectx) {
 'use strict';
@@ -450,7 +450,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P19867(s) {
+function _main___P20031(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1077,13 +1077,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P19867.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P19867.continuations = [ 39,40,41,42 ]
+_main___P20031.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P20031.continuations = [ 39,40,41,42 ]
 
-function _main___P19867_mk(s) {
+function _main___P20031_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P19867, depth: s.depth + 1,
+        parent: s, fn: _main___P20031, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -47740,5 +47740,5 @@ const sprites_BaseSpriteSayRenderer__C2024_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["npc___19497","Kromer___19500","mySprite2___19509","mySprite4___19587","mySprite___19643","statusbar___19655","mySprite3___19702","mySprite5___19710"])
 
-return _main___P19867
+return _main___P20031
 })
